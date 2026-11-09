@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_BRA
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Brasil"
+  sigla: BRA
+  escudoOuBandeira: {fileID: 5650053419557845937, guid: 60d8add3cd7d96d45bb7723e139a01fe, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.929412, g: 0.807843, b: 0.211765, a: 1}
+  corSecundaria: {r: 0.101961, g: 0.349020, b: 0.662745, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Vinícius Júnior"
+    numeroCamisa: 7
+    foto512x512: {fileID: 5383397659515996342, guid: f50c7b497b8926f4cbdd28aed67747f0, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

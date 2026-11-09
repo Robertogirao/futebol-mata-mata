@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: LEG_02
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Diego Maradona"
+  sigla: DIE
+  escudoOuBandeira: {fileID: 5044127093511370165, guid: 940432ae3e6137c44a85c47fedcbdb2f, type: 3}
+  overall: 90
+  corPrincipal: {r: 0.925490, g: 0.929412, b: 0.901961, a: 1}
+  corSecundaria: {r: 0.619608, g: 0.227451, b: 0.286275, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Diego Maradona"
+    numeroCamisa: 10
+    foto512x512: {fileID: 21300000, guid: 3f19f84da17d57b7b6b91e7ffb4f8522, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

@@ -1,0 +1,129 @@
+MATA-MATA — ATUALIZAÇÃO WORLD CUP + LEGENDS
+
+1. ABRIR O PROJETO
+Extraia o ZIP inteiro em uma pasta nova. No Unity Hub, clique em Add / Adicionar
+projeto e escolha a pasta MataMata_Atualizado (a que contém Assets, Packages e
+ProjectSettings). Use Unity 6000.4.11f1, a versão registrada no seu backup.
+Aguarde a importação dos pacotes e das imagens.
+
+2. COMEÇAR PELAS DEMONSTRAÇÕES
+No painel Project, abra Assets > Scenes. Dê dois cliques em uma destas cenas:
+- DEMO_Champions_16
+- DEMO_EuropaLeague_16
+- DEMO_WorldCup_16
+- DEMO_Legends_16
+Depois clique em Play. Há 15 segundos de apresentação inicial e 10 de pré-jogo.
+As demos não salvam o progresso e reiniciam a chave no próximo Play.
+Use a janela Game em 1920 x 1080 ou proporção 16:9 para o enquadramento previsto.
+
+3. CENAS DE 32 PARTICIPANTES
+MataMata_WorldCup_32 e MataMata_Legends_32 já têm as 32 fichas preenchidas.
+Elas salvam o progresso e gravam uma fase por sessão, como o sistema original.
+Para jogar o torneio inteiro em uma sessão, desmarque Gravar Somente Uma Fase
+no componente MataMataCampeonato do objeto TournamentManager.
+
+As cenas originais MataMata_Champions_32 e MataMata_EuropaLeague_32 mantêm as
+fichas e vagas do backup. Caso haja vagas vazias, complete-as no Inspector
+ou use as cenas DEMO de 16 participantes. Não foram inventados novos clubes
+para preencher as vagas das competições existentes.
+
+4. MUDAR O ANO DA WORLD CUP
+Selecione TournamentManager na Hierarchy. No componente MataMataCampeonato,
+clique em "Editar ano, fontes, cores e visual deste cenário".
+Isso abre o tema usado pela cena. Em "Ano / edição visível", edite Ano,
+por exemplo 2030. Faça isso FORA do Play Mode e salve com Ctrl+S.
+O título, o chaveamento e o placar usam esse campo. Não é necessário editar
+uma imagem para mudar o ano. Use quatro dígitos.
+Cada ano usa uma pasta de progresso separada. Alterar o ano não atualiza as
+seleções, os jogadores, as fotos nem o formato: essas fichas são editáveis.
+
+Atenção: a demo usa Tema_WorldCup_DEMO; a cena de 32 usa Tema_WorldCup.
+Para aplicar o ano às duas, edite os dois temas.
+
+5. FONTES, CORES, ZOOM E IMAGENS
+Os temas ficam em Assets > MataMata > Temas.
+No tema correspondente à cena, você encontra:
+- Fonte Jogadores / Cor Nome Jogador: cartões e nomes acima das bolas.
+- Fonte Placar / Cor Texto Placar: números do placar e cronômetro.
+- Fonte Gol / Cor Texto Gol / Cor Titulo Gol: banner de gol.
+- Fonte Titulo / Fonte Texto: apresentação e chaveamento; também são as fontes
+  usadas quando uma das fontes específicas acima fica vazia.
+- Cor Primaria / Cor Secundaria / Cor Destaque / Cor Painel: paleta da transmissão.
+- Tamanho Camera: padrão 7,2; maior = mais afastado. O original era 6.
+- Escala HUD: padrão 0,85; maior = placar e cartões maiores.
+- Campo / Helice2 / Goleiro: as novas artes, trocáveis por sprites de sua escolha.
+As novas imagens ficam em Assets > MataMata > Arte > V2.
+As artes antigas continuam no projeto.
+As fontes devem ser assets TMP (SDF), como as que já estão em Assets > FONTES.
+
+6. UM JOGADOR POR TIME
+As fichas originais e seus elencos completos foram preservados.
+Agora cada partida escolhe um único representante por equipe. Esse mesmo
+jogador aparece no cartão e em todas as bolas lançadas por aquele time.
+O ritmo de lançamentos, a força, o limite de 6 bolas e a vantagem por overall
+foram mantidos. Um jogador por time NÃO limita a partida a duas bolas.
+
+Para escolher o jogador de um clube:
+- Abra a ficha em Assets > FichasDeTimes.
+- Desative Sortear Titulares Aleatorios.
+- Ative Usar Selecao Manual.
+- Em Indices Titulares, use o PRIMEIRO campo: 0 = primeiro jogador do elenco,
+  1 = segundo, 2 = terceiro. Os demais índices antigos são ignorados.
+Sem seleção manual nem sorteio, o primeiro jogador válido representa a equipe.
+Se preferir sortear um representante a cada partida, ative o sorteio.
+
+Fichas novas:
+Assets > MataMata > Fichas > WorldCup
+Assets > MataMata > Fichas > Legends
+São exemplos editáveis de 32 seleções e 32 lendas, não elencos oficiais de uma
+edição específica. As seleções têm overall 80 e as lendas 90 como ponto de partida.
+Fotos de jogadores já existentes foram reaproveitadas quando correspondiam ao
+nome. Nos demais casos há cartões com iniciais e número, NÃO retratos reais.
+Você pode substituir Foto512x512 pela foto que preferir.
+
+7. CORREÇÕES DA BOLA
+Gol: ao pontuar, a bola desaparece imediatamente, com física, colisores, texto
+e rastro desativados. O banner guarda os dados do autor e continua aparecendo.
+A mesma bola não pode pontuar de novo, inclusive com dois sensores ou no gol de ouro.
+
+Chuteira: a proteção observa tanto o contato quanto a permanência dentro do
+raio de giro. Pequenos intervalos sem contato não reiniciam a observação.
+Após 1,2 segundo, procura uma saída livre fora do giro e evita a recaptura por
+0,25 segundo. Paredes, goleiros e sensores são considerados na busca da saída.
+Os parâmetros ficam em DesprenderBolaDaHelice, no prefab:
+Assets > Prefabs > Bola_Jogador.
+O descarte de bolas realmente paradas voltou a 8 segundos: o prefab do backup
+estava em 0,5 segundo, curto demais para a nova proteção de desprendimento.
+
+8. CONFERÊNCIA NO UNITY
+Esta entrega foi verificada estaticamente, e o modelo de chaveamento foi
+executado em testes C#. Este ambiente NÃO possui o editor Unity, portanto
+não foi possível executar o jogo nem confirmar sua aparência no Play Mode.
+
+Incluí 8 testes de regressão para você rodar no próprio Unity:
+Window > General > Test Runner > PlayMode > Run All.
+Eles cobrem gol imediato em pausa, dois sensores/colisor filho, partida encerrada,
+gol de ouro, desprendimento de órbita e seleção de um único titular.
+Também verificam a máscara dos braços, a malha visual e a pausa da animação.
+Esses testes estão incluídos, mas NÃO foram executados no editor nesta entrega.
+
+Depois, recomendo conferir uma partida em cada demo, principalmente a saída
+da bola da hélice e o gol de ouro. Se houver erro, envie o texto da Console
+ou um vídeo curto do comportamento para eu ajustar a partir desta versão.
+
+9. MÃOS DO GOLEIRO ANIMADAS
+No tema usado pela cena, procure "Movimento das mãos do goleiro (visual)":
+- Animar Maos Goleiro: liga/desliga o movimento.
+- Velocidade Maos Goleiro: ritmo do balanço (padrão 0,8).
+- Amplitude Maos Goleiro: deslocamento das luvas (padrão 0,06).
+- Reacao Maos Goleiro: ajuste à bola mais próxima (padrão 0,07).
+- Material Maos Goleiro: mantenha GoleiroAnimado para desenhar a malha.
+
+As luvas balançam suavemente, os braços acompanham a bola próxima e há uma
+pequena flexão quando a bola encosta no goleiro. O movimento congela junto
+com a partida. A IA, a dificuldade, o movimento vertical e os colisores
+continuam os mesmos. Não há Animator ou rig para configurar manualmente.
+A máscara foi ajustada à nova arte Goleiro_Premium. Se trocar essa imagem
+por uma pose diferente, a máscara dos braços precisará ser reajustada.
+O arquivo docs/goleiro-maos.gif mostra uma prévia visual, renderizada fora
+do Unity. Confira o resultado final da cena no Play Mode.

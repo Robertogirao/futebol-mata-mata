@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_CRO
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Croácia"
+  sigla: CRO
+  escudoOuBandeira: {fileID: -5446989583718250477, guid: 9b940d9522da5174498f698ecda6d12d, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.815686, g: 0.200000, b: 0.262745, a: 1}
+  corSecundaria: {r: 0.133333, g: 0.309804, b: 0.615686, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Luka Modrić"
+    numeroCamisa: 10
+    foto512x512: {fileID: 21300000, guid: a58e489837fb5d7089ee832606bdfd06, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

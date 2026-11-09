@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_NGA
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Nigéria"
+  sigla: NGA
+  escudoOuBandeira: {fileID: -4282705769191533887, guid: 5d89ea214b6be5d419f810aaff3d4746, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.137255, g: 0.588235, b: 0.388235, a: 1}
+  corSecundaria: {r: 0.917647, g: 0.925490, b: 0.898039, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Victor Osimhen"
+    numeroCamisa: 9
+    foto512x512: {fileID: 21300000, guid: 988bc0dd442e5aa696d031d1f884724d, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

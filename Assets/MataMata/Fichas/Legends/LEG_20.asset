@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: LEG_20
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Romário"
+  sigla: ROM
+  escudoOuBandeira: {fileID: 5650053419557845937, guid: 60d8add3cd7d96d45bb7723e139a01fe, type: 3}
+  overall: 90
+  corPrincipal: {r: 0.925490, g: 0.929412, b: 0.901961, a: 1}
+  corSecundaria: {r: 0.619608, g: 0.227451, b: 0.286275, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Romário"
+    numeroCamisa: 11
+    foto512x512: {fileID: 21300000, guid: 8a0c6d55da545b66818826ebd811f9e2, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

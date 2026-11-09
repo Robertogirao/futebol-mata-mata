@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_MEX
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "México"
+  sigla: MEX
+  escudoOuBandeira: {fileID: -6752805805799011333, guid: 2ffae69cc59a695479f7383e9f9caa0b, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.129412, g: 0.552941, b: 0.356863, a: 1}
+  corSecundaria: {r: 0.925490, g: 0.921569, b: 0.866667, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Santiago Giménez"
+    numeroCamisa: 9
+    foto512x512: {fileID: 21300000, guid: 3d6ad4325c7559fbaf08646553787a0b, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

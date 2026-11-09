@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_ITA
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Itália"
+  sigla: ITA
+  escudoOuBandeira: {fileID: -9061665219885468474, guid: 461978bd7593a40449d4963158117ede, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.141176, g: 0.443137, b: 0.788235, a: 1}
+  corSecundaria: {r: 0.960784, g: 0.945098, b: 0.862745, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Nicolò Barella"
+    numeroCamisa: 18
+    foto512x512: {fileID: -5397436635310542514, guid: 2b5e81f0f1d4b9d4faa09c44c011272b, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000

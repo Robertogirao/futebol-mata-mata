@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d7eeb6dbceafb4a8f8614a7cf99338, type: 3}
+  m_Name: WC_NOR
+  m_EditorClassIdentifier: Assembly-CSharp::TeamData
+  nomeEquipe: "Noruega"
+  sigla: NOR
+  escudoOuBandeira: {fileID: 3346294859876476571, guid: aabcce55ace000341a0f139f92350f7e, type: 3}
+  overall: 80
+  corPrincipal: {r: 0.733333, g: 0.156863, b: 0.215686, a: 1}
+  corSecundaria: {r: 0.913725, g: 0.913725, b: 0.874510, a: 1}
+  posturaTatica: 1
+  elenco:
+  - nomeJogador: "Erling Haaland"
+    numeroCamisa: 9
+    foto512x512: {fileID: -710731960626042704, guid: 978633e4caf982142b3b53f53c756b55, type: 3}
+    estrelasSkill: 3
+  sortearTitularesAleatorios: 0
+  usarSelecaoManual: 0
+  indicesTitulares: 00000000
