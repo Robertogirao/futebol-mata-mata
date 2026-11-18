@@ -1,0 +1,14 @@
+# Basquete 2D · Tobogã V22
+
+No Inspector da cena **MarbleBasketFunil2D**, a seção **Tobogã** oferece estas faixas para testar a ponta:
+
+- **Inclinação da Rampa** entre **0° e 20°** para cada lado. Zero põe a ponta na posição central.
+- **Velocidade da Rampa** entre **0 e 1,5 ciclo por segundo**. Zero pausa o movimento no ângulo atual.
+
+Os valores gravados na sua cena entram em vigor ao iniciar a partida. Você também pode variar os controles durante o Play. Para gravar uma nova configuração, ajuste os valores fora do Play e salve a cena.
+
+## Instalação sobre a V21
+
+Pare o Play, descompacte o ZIP e copie a pasta **Assets** extraída para a pasta principal do projeto NBA. Aceite substituir os arquivos de mesmo nome. Abra **MarbleBasketFunil2D** e confirme **Tobogã V22** no Inspector.
+
+O código compilou com as referências disponíveis. A geometria e os lançamentos nos extremos das faixas foram verificados em simulação. Falta confirmar em Play no Unity 6.
