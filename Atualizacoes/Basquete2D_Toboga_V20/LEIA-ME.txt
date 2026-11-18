@@ -1,0 +1,11 @@
+# Basquete 2D · Tobogã V20
+
+A descida íngreme emenda numa virada curta que redireciona a bola para cima. A ponta continua articulada e reage à bola por colisão. Uma bola que perde velocidade e fica parada no pé da curva volta ao funil para liberar a passagem.
+
+## Instalação sobre a V19
+
+1. Pare o Play e descompacte o ZIP.
+2. Copie a pasta **Assets** extraída para a pasta principal do projeto NBA, onde estão **Assets**, **Packages** e **ProjectSettings**. Aceite substituir os arquivos de mesmo nome.
+3. Abra **MarbleBasketFunil2D** e procure **Tobogã V20** no Inspector. Aperte Play. Use **Inclinação da Rampa** para ajustar quanto a ponta se move.
+
+A rampa mais curta deixa as cestas distantes mais difíceis. Na simulação em Box2D com os aros atuais, a bola saiu subindo mesmo com a ponta fixa. Foram observadas cestas de dois e uma de três em oito partidas simuladas. O código compilou com referências do Unity. Falta executar o teste em Play no Unity 6.
