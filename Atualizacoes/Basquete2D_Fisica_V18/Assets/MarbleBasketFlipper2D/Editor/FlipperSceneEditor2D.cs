@@ -1,0 +1,28 @@
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+
+namespace MarbleBasketFlipper2D.Editor
+{
+    public static class FlipperSceneEditor2D
+    {
+        [MenuItem("Tools/Basquete 2D/Abrir funil de duas cestas")]
+        public static void Open()
+        {
+            if (EditorApplication.isPlaying || !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+            EditorSceneManager.OpenScene("Assets/MarbleBasketFlipper2D/Scenes/MarbleBasketFunil2D.unity");
+            Selection.activeGameObject = GameObject.Find("MarbleBasketFunil2D");
+        }
+    }
+    [CustomEditor(typeof(FlipperArena2D))]
+    public sealed class FlipperArenaInspector2D : UnityEditor.Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
+            EditorGUILayout.HelpBox("Física V18: a gravidade acelera as bolas; a curva e a rampa móvel usam colisões físicas. 16 temas disponíveis.", MessageType.Info);
+        }
+    }
+}
+#endif

@@ -1,0 +1,1 @@
+{"name":"MarbleBasketFlipper2D.EditorTests","references":["MarbleBasketFlipper2D.Runtime"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false,"defineConstraints":["UNITY_INCLUDE_TESTS"]}

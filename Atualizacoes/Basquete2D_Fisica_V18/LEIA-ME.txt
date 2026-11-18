@@ -1,0 +1,20 @@
+# Basquete 2D — Física e rampa V18
+
+Esta atualização é para o projeto que já tem a cena **MarbleBasketFunil2D** e os temas instalados. Ela atualiza a física da cena de teste. Não contém cenas, imagens de tema ou música, e não modifica as cenas de campeonato.
+
+## O que mudou
+
+- As bolas ganham velocidade ao cair pela gravidade. Uma curva e uma rampa com a ponta inclinada conduzem o movimento.
+- A esteira continua indo e voltando: por ser móvel, ela pode transferir energia à bola quando há uma colisão física. A direção resulta da velocidade, do ponto de contato, dos choques e do movimento da esteira. Não há mais cálculo que aponta a bola para uma cesta nem impulso para destravar uma bola.
+- As bolas estão um pouco mais elásticas. Se uma ficar presa por muito tempo no funil, ela volta ao nascimento sem receber um empurrão.
+- O antigo ajuste **Variação Arremesso** foi ocultado porque pertencia ao lançamento assistido. A velocidade da esteira continua disponível no Inspector.
+
+## Como instalar
+
+1. Pare o Play e feche o Unity. Faça uma cópia de segurança do projeto antes de atualizar.
+2. Descompacte o ZIP. Copie a pasta **Assets** extraída e cole-a na pasta principal do projeto NBA, a mesma que contém **Assets**, **Packages** e **ProjectSettings**.
+3. Quando o Windows perguntar, aceite substituir os arquivos de mesmo nome. Não apague a pasta Assets existente.
+4. Abra o Unity e aguarde a importação terminar. Abra a cena **MarbleBasketFunil2D** e selecione o objeto com esse nome na Hierarchy.
+5. No Inspector deve aparecer a mensagem **Física V18**. Aperte Play para experimentar a rampa. Se a janela Console mostrar algum erro vermelho, anote a mensagem antes de alterar outros arquivos.
+
+O código foi compilado com referências de uma versão anterior do Unity e testado por simulação aproximada em Box2D, incluindo dez bolas, as duas cestas e a barreira. O Unity 6 não estava disponível neste ambiente: o comportamento, o acabamento visual e o equilíbrio precisam ser conferidos em Play no seu projeto.
