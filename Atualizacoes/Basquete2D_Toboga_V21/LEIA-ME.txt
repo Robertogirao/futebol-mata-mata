@@ -1,0 +1,11 @@
+# Basquete 2D · Tobogã V21
+
+O funil começa mais alto e a entrada arredondada conduz as bolas à descida com menos batidas. A ponta tem mais alcance e mantém a inclinação de 48° na posição central. A velocidade vem da queda e o lançamento acontece pelo contato com a curva.
+
+## Instalação sobre a V20
+
+1. Pare o Play e descompacte o ZIP.
+2. Copie a pasta **Assets** extraída para a pasta principal do projeto NBA, onde estão **Assets**, **Packages** e **ProjectSettings**. Aceite substituir os arquivos de mesmo nome.
+3. Abra **MarbleBasketFunil2D**, confirme **Tobogã V21** no Inspector e aperte Play. A inclinação e a velocidade da ponta podem ser ajustadas no Inspector.
+
+O código compilou com referências do Unity. O funil comportou até 12 bolas sem sobreposição no teste de nascimento. Em oito partidas simuladas em Box2D com a inclinação e a velocidade de nascimento da captura, houve cestas de três pontos em sete partidas. A de dois continua mais frequente. Falta confirmar o comportamento em Play no Unity 6.
