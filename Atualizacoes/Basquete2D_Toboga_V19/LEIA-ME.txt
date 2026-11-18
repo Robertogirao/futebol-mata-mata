@@ -1,0 +1,13 @@
+# Basquete 2D · Tobogã V19
+
+A bola ganha velocidade pela gravidade, passa pelo fundo arredondado e sobe pela curva final. A ponta gira devagar em torno da emenda com a descida. A direção e a velocidade na saída dependem do contato entre a bola e o trilho.
+
+No Inspector da cena **MarbleBasketFunil2D**, ajuste **Inclinação da Rampa** para variar o ângulo da ponta. O valor zero fixa a ponta. **Velocidade da Rampa** controla o ritmo do movimento.
+
+## Instalação
+
+1. Pare o Play e descompacte o ZIP.
+2. Copie a pasta **Assets** extraída para a pasta principal do projeto NBA, onde estão as pastas **Assets**, **Packages** e **ProjectSettings**. Aceite substituir os arquivos de mesmo nome.
+3. Abra **MarbleBasketFunil2D** e procure a mensagem **Tobogã V19** no Inspector. Aperte Play para ver o percurso.
+
+O pacote atualiza os scripts da cena que já tem os temas instalados. O código foi compilado com referências do Unity. O percurso e a pontuação foram avaliados numa simulação Box2D. O acabamento visual e os testes de Play Mode aguardam execução no Unity 6.
